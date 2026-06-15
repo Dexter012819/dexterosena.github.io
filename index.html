@@ -22,9 +22,6 @@
   <header>
     <div class="container nav-container">
       <div class="logo">Dexter Oseña</div>
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
-      </button>
       <nav id="nav-menu">
         <ul>
           <li><a href="#about">About</a></li>
@@ -36,28 +33,42 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
-      <div class="hero-text">
+      <div class="hero-text reveal fade-left">
         <h1>Hello, I'm Dexter Oseña.</h1>
         <p class="hero-role">IT Lecturer | IT Capstone Coordinator | MIT Student</p>
         <p>Empowering students through technology and crafting visual experiences.</p>
         <br>
         <a href="#contact" class="hero-btn">Get in Touch</a>
       </div>
-      <div class="hero-image-container">
+      <div class="hero-image-container reveal fade-right">
         <!-- Replace 'your-photo.jpg' with your actual image filename -->
         <img src="Dexter.jpg" alt="Dexter Oseña" class="profile-img">
       </div>
     </div>
+    <!-- Scroll Down Hint -->
+    <div class="scroll-hint">
+      <p>Scroll Down</p>
+      <div class="arrow"></div>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="container">
+  <section id="about" class="container reveal fade-bottom">
     <h2>About Me</h2>
     <div class="about-grid">
       <p>
@@ -71,11 +82,11 @@
 
   <!-- Experience Section -->
   <section id="experience" class="container">
-    <h2>Work Experience</h2>
+    <h2 class="reveal fade-bottom">Work Experience</h2>
     <div class="timeline">
       
       <!-- Current Role -->
-      <div class="job-card">
+      <div class="job-card reveal fade-bottom">
         <h3>STI College Global City</h3>
         <span class="role-badge">September 01, 2021 – Present</span>
         
@@ -96,7 +107,7 @@
       </div>
 
       <!-- Previous STI Role -->
-      <div class="job-card">
+      <div class="job-card reveal fade-bottom">
         <h3>STI College Global City</h3>
         <span class="role-badge">January 14, 2019 – January 31, 2021</span>
         
@@ -122,7 +133,7 @@
       </div>
 
       <!-- Internship -->
-      <div class="job-card">
+      <div class="job-card reveal fade-bottom">
         <h3>Makati Development Corporation</h3>
         <span class="role-badge">March 21, 2018 – June 29, 2018</span>
         
@@ -137,10 +148,10 @@
 
   <!-- Education Section -->
   <section id="education" class="container">
-    <h2>Education</h2>
+    <h2 class="reveal fade-bottom">Education</h2>
     
     <!-- Master's Degree -->
-    <div class="card" style="display: block; margin-bottom: 2rem;">
+    <div class="card reveal fade-bottom" style="display: block; margin-bottom: 2rem;">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
         <div>
           <h3 style="margin-bottom: 0.25rem;">Master's in Information Technology</h3>
@@ -152,7 +163,7 @@
     </div>
 
     <!-- Bachelor's Degree -->
-    <div class="card" style="display: block;">
+    <div class="card reveal fade-bottom" style="display: block;">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
         <div>
           <h3 style="margin-bottom: 0.25rem;">Bachelor of Science in Information Technology</h3>
@@ -166,9 +177,9 @@
 
   <!-- Achievements Section -->
   <section id="achievements" class="container">
-    <h2>Achievements</h2>
+    <h2 class="reveal fade-bottom">Achievements</h2>
     <div class="grid">
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-1">
         <div class="card-icon"><i class="fas fa-award"></i></div>
         <div class="card-content">
           <span class="card-date">Aug 2024</span>
@@ -176,7 +187,7 @@
           <p>Exemplary punctuality and dedication at work.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-2">
         <div class="card-icon"><i class="fas fa-check-double"></i></div>
         <div class="card-content">
           <span class="card-date">Aug 2024</span>
@@ -184,7 +195,7 @@
           <p>Consistent reporting for the academic year 2023-2024.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-3">
         <div class="card-icon"><i class="fas fa-users-cog"></i></div>
         <div class="card-content">
           <span class="card-date">Nov 2023</span>
@@ -192,7 +203,7 @@
           <p>Led "The IT Innovators' Gauntlet" team to excellence in productivity and IoT.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-4">
         <div class="card-icon"><i class="fas fa-star"></i></div>
         <div class="card-content">
           <span class="card-date">Aug 2023</span>
@@ -200,7 +211,7 @@
           <p>Ranked in the top 3 with an outstanding score of 4.67.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-1">
         <div class="card-icon"><i class="fas fa-handshake"></i></div>
         <div class="card-content">
           <span class="card-date">Aug 2023</span>
@@ -208,7 +219,7 @@
           <p>Recognized for fostering a collaborative and supportive environment.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-2">
         <div class="card-icon"><i class="fas fa-certificate"></i></div>
         <div class="card-content">
           <span class="card-date">2022</span>
@@ -216,7 +227,7 @@
           <p>Passed 1st and 2nd semester certifications for school year 2021-2022.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-3">
         <div class="card-icon"><i class="fas fa-desktop"></i></div>
         <div class="card-content">
           <span class="card-date">Jul 2022</span>
@@ -224,7 +235,7 @@
           <p>Attained 90% to 100% E-Learning Management System usage.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-4">
         <div class="card-icon"><i class="fas fa-microphone"></i></div>
         <div class="card-content">
           <span class="card-date">Jul 2022</span>
@@ -237,9 +248,9 @@
 
   <!-- Certifications Section -->
   <section id="certifications" class="container">
-    <h2>Certifications & Training</h2>
+    <h2 class="reveal fade-bottom">Certifications & Training</h2>
     <div class="grid">
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-1">
         <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
         <div class="card-content">
           <span class="card-date">Jan 2024</span>
@@ -247,7 +258,7 @@
           <p>Train the Trainer on SAP S/4HANA with Global Bike.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-2">
         <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
         <div class="card-content">
           <span class="card-date">Jun 2022</span>
@@ -255,7 +266,7 @@
           <p>Certified in Power BI, Project Management, and Windows 11.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-3">
         <div class="card-icon"><i class="fas fa-link"></i></div>
         <div class="card-content">
           <span class="card-date">Nov 2019</span>
@@ -263,7 +274,7 @@
           <p>Conducted by the Union Bank of the Philippines.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-1">
         <div class="card-icon"><i class="fas fa-vial"></i></div>
         <div class="card-content">
           <span class="card-date">Oct 2019</span>
@@ -271,7 +282,7 @@
           <p>Qualified through the Xcellerator Experts Program exam.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-2">
         <div class="card-icon"><i class="fas fa-id-card"></i></div>
         <div class="card-content">
           <span class="card-date">Apr 2020</span>
@@ -279,7 +290,7 @@
           <p>Philippine Society of IT Educators - NCR Chapter.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal fade-bottom reveal-delay-3">
         <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
         <div class="card-content">
           <span class="card-date">May 2019</span>
@@ -292,11 +303,11 @@
 
   <!-- Skills Section -->
   <section id="skills" class="container">
-    <h2>Skills</h2>
+    <h2 class="reveal fade-bottom">Skills</h2>
     <div class="skills-grid">
       
       <!-- Academics -->
-      <div class="skill-category">
+      <div class="skill-category reveal fade-left">
         <h3><i class="fas fa-book-reader" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Academics</h3>
         <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-color);">Handled subjects:</p>
         <ul class="skill-list">
@@ -315,7 +326,7 @@
       </div>
 
       <!-- Administrative -->
-      <div class="skill-category">
+      <div class="skill-category reveal fade-right">
         <h3><i class="fas fa-tasks" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Administrative</h3>
         <ul class="skill-list">
           <li>Database Management (MSSQL, MySQL)</li>
@@ -334,14 +345,14 @@
 
     </div>
     
-    <div style="margin-top: 2rem; text-align: center; color: var(--text-color);">
+    <div style="margin-top: 2rem; text-align: center; color: var(--text-color);" class="reveal fade-bottom">
       <p><strong>Character Reference:</strong> Available upon request.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
-    <div class="container">
+    <div class="container reveal fade-in">
       <h2>Let's Connect</h2>
       <p style="margin-bottom: 2rem;">Feel free to reach out for collaborations or inquiries.</p>
       <a href="mailto:osenadexter@gmail.com" class="email-link">osenadexter@gmail.com</a>
@@ -358,7 +369,26 @@
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('nav ul li a');
 
-    // Toggle menu visibility
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+            theme = 'light';
+        } else {
+            theme = 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    });
+
+    // Mobile Menu Toggle Logic
     mobileMenuBtn.addEventListener('click', () => {
       navMenu.classList.toggle('active');
       const icon = mobileMenuBtn.querySelector('i');
@@ -373,6 +403,59 @@
         const icon = mobileMenuBtn.querySelector('i');
         icon.classList.add('fa-bars');
         icon.classList.remove('fa-times');
+      });
+    });
+
+    // Scroll Reveal Intersection Observer
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Once revealed, stop observing to prevent repeated triggers/stuttering
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Hide scroll hint on scroll
+    const scrollHint = document.querySelector('.scroll-hint');
+    const backToTopBtn = document.getElementById('back-to-top');
+    const progressBar = document.getElementById('scroll-progress');
+
+    window.addEventListener('scroll', () => {
+      // Scroll progress logic
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      progressBar.style.width = scrolled + "%";
+
+      // Scroll hint logic
+      if (window.scrollY > 100) {
+        scrollHint.style.opacity = '0';
+        scrollHint.style.transition = 'opacity 0.5s ease';
+      } else {
+        scrollHint.style.opacity = '0.8';
+      }
+
+      // Back to top button logic
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('active');
+      } else {
+        backToTopBtn.classList.remove('active');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
       });
     });
   </script>
